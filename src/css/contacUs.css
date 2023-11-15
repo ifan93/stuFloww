@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    /* #363532, rgb(88, 111, 112) */
+    align-items: center;
+    display: block;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 100vh;
+    padding-top: 3%;
+    background-image: linear-gradient(100deg, #001214, #001f29);
+    color: white;
+    transition: 0.3s linear;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d2e39;
+    width: 100%;
+    height: 100px;
+    margin-top: -3%;
+}
+nav{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-right: 20%;
+}
+nav a{
+    
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+    color: white;
+   
+}
+nav a:hover{
+    cursor: pointer;
+    color: #323636;
+}
+.footer{
+    background:linear-gradient(to right,w);
+    padding:30px 0px;
+    width: 100%;
+    margin-top: 10 0%;
+    
+   
+    background-image: linear-gradient(100deg, #03282c, #003749);
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    margin-top:1%;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+.container{
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    background: transparent;
+    border-radius: 20px;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    margin-right: 10%;
+    
+    
+}    
+.container h1{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 500;
+}
+.container p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-weight: 600;
+    margin-bottom: 20%;
+}
+
+.form2 input {
+   display:block;
+   border: 2px solid rgba(255, 255, 255, .2);
+   border-radius: 10px;
+   width: 100%;
+   font-size: 14px;
+   padding: 10px  ;
+   background: transparent;
+   color: #fff;
+   margin-bottom: 2%;
+  
+
+   
+}
+.form2 textarea {
+    display:block;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    resize: vertical;
+    overflow:auto;
+    padding:10px
+ 
+} 
+.form2 label{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.form2 .submit-button{
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    width: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 2%;
+    background-image: linear-gradient(100deg, #03282c, #003749);
+    margin-left: 40%;
+}
+
+.form2 .submit-button:hover{
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  width: 20%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 2%;
+  background-image: linear-gradient(100deg, #03282c, #003749);
+  margin-left: 40%;
+}
+.title{
+    margin-bottom: 2%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title h1{
+   font-family: 'Cyberpunk Is Not Dead', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.title p{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    
+    
+
+}
+/* Begin Right Contact Page */
+.direct-contact-container {
+    max-width: 400px;
+    
+    margin-left: 20%;
+  }
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    margin-left: 20px;
+    padding-right: 100px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    font-size: 17px;
+    color: #aaa;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+  
+  .place {
+    margin-left: 18px;
+    
+  }
+  
+
+  
+  .phone {
+    margin-left: 18px;
+  }
+  
+  .gmail {
+    margin-left: 18px;
+  }
+  
+  .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 
+  }
+  
+  .social-media-list li a {
+    color: #fff;
+  }
+  
+  .social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 20px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-image: linear-gradient(100deg, #03282c, #003749);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:after {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:hover {
+    background-color: #fff; 
+  }
+  
+  .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  
+  .social-media-list li:hover a {
+    color: #000;
+  }
+  
+  .copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  hr {
+    border-color: rgba(255,255,255,.6);
+  }
+  .contact1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%
+    
+    
+  }
+  

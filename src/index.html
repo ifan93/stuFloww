@@ -1,0 +1,102 @@
+<?php
+session_start();
+
+// Check if the user is not logged in
+if (!isset($_SESSION['username'])) {
+    // Redirect to the login page
+    header("Location: login.html");
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stufFlow-home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- font awesome (https://fontawesome.com) for basic icons; source: https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/cyberpunk-is-not-dead" rel="stylesheet">
+                
+
+
+
+</head>
+
+<body>
+    <header class="" standard-theme>
+        <div class="logo">
+            <img class="logo" src="image/stuflowLogo.png" alt="">
+        </div>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contactUs.html">CONTACT US</a>
+
+        </nav>
+
+
+    </header>
+    
+    <div class="home1">
+        <h1>welcome to stuFlow</h1>
+
+        <p style="font-family: 'Monzane' sans-serif;"> Your Ultimate Taskmaster! StuFlow is your go-to to-do list web app that not only helps you organize, add,
+            check, and delete tasks but also orchestrates your task management with effortless efficiency. Say hello to
+            productive simplicity!</p>
+
+            <a href="login.html"><button >GET STARTED</button></a>
+
+           
+
+           
+
+    </div>
+    <div class="gif">
+        <h1 >elavate your task organization</h1>
+        <img src="image/xp.gif" alt="">
+
+       <h1>elavate your task management</h1>
+        <video controls autoplay muted  src="How I Manage My Time - 10 Time Management Tips.mp4"></video>
+    </div>
+
+
+    <div class="footer">
+        <div class="row">
+            <a href="https://www.facebook.com/profile.php?id=100092888289044"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/skrewexd/"><i class="fa fa-instagram"></i></a>
+
+        </div>
+
+        <div class="row">
+            <ul>
+                <li><a href="#">Task</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+
+            </ul>
+        </div>
+
+        <div class="row">
+            stuFlow Copyright © 2023 stuFlow - All rights reserved || Designed By: Irfan
+        </div>
+
+    </div>
+
+</body>
+
+</html>
